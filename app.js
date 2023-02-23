@@ -15,17 +15,19 @@ function fromEuroToDollar (eur){
     let  dolar = eur * oneEuroIs.USD
     return dolar;
 };
+
+
 function fromDollarToYen (us){
-     yen = us/oneEuroIs.USD * oneEuroIs.JPY
+    let  yen = us/oneEuroIs.USD * oneEuroIs.JPY
     return yen;
 };
-
 
 
 function fromYenToPound (y){
      libras = y / oneEuroIs.JPY * oneEuroIs.GBP;
     return libras;
 };
+console.log(fromDollarToYen(1));
 
 module.exports = { sum,
 fromEuroToDollar,
